@@ -1,0 +1,234 @@
+/* From uiverse.io by @alexruix */
+.card {
+ width: 190px;
+ height: 300px;
+ background: #f5f5f5;
+ padding: 2rem 1.5rem;
+ transition: box-shadow .3s ease, transform .2s ease;
+}
+
+.card-info {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.card-avatar {
+ --size: 60px;
+ background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+ width: var(--size);
+ height: var(--size);
+ border-radius: 50%;
+ transition: transform .2s ease;
+ margin-bottom: 1rem;
+}
+
+
+/*Card footer*/
+.card-social {
+ transform: translateY(200%);
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ opacity: 0;
+ transition: transform .2s ease, opacity .2s ease;
+ padding-left: 0.5rem;
+}
+
+.card-social__item {
+ list-style: none;
+ width: 50px;
+ height: 50px;
+}
+
+.card-social__item svg {
+ display: block;
+ background-color: transparent;
+ 
+ cursor: pointer;
+ transition: fill 0.2s ease ,transform 0.2s ease;
+}
+
+/*Text*/
+.card-title {
+ color: #333;
+ font-size: 1.5em;
+ font-weight: 600;
+ line-height: 2rem;
+}
+
+.card-subtitle {
+ color: #859ba8;
+ font-size: 0.8em;
+}
+
+/*Hover*/
+.card:hover {
+ box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .card-info {
+ transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+ transform: translateY(100%);
+ opacity: 1;
+}
+
+.card-social__item svg:hover {
+ 
+ transform: scale(1.1);
+}
+
+.card-avatar:hover {
+ transform: scale(1.1);
+}
+
+.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+.h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
+.input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+.input:focus{border-bottom:2px solid #78788c}
+.p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
+.button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+.button:hover{background:#78788c;color:#fff}
+.div{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
+.span{margin:0 5px 0 15px}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 4% 0 0;
+  margin: auto;
+}
+.form2 {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form2 input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form2 button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #354259;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form2 button:hover,.form button:active,.form button:focus {
+  background: #576b8c;
+}
+.form2 .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form2 .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form2 .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background-color: #ECE5C7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+/* From uiverse.io by @nikk7007 */
+.button2 {
+  width: 160px;
+  padding: 0.8em 1.8em;
+  border: 2px solid #354259;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #354259;
+ }
+ 
+ .button2::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #354259;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .button2:hover::before {
+  width: 105%;
+ }
+ 
+ .button2:hover {
+  color: white;
+ }
