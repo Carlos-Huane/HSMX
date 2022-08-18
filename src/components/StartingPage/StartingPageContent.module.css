@@ -1,0 +1,12 @@
+.starting {
+  margin: 3rem auto;
+ display: flex;
+
+}
+
+.starting h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+}
